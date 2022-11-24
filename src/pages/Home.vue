@@ -14,11 +14,13 @@
         <div class="row">
           <div class="col-lg-3 col-md-6" v-for="(item, index) in RetroGameList" :key="index"
             @click="onClickRetroGame(index)">
-            <div class="single-category text-center mb-4">
-              <img :src="item.img" alt="category" width="43" height="43">
-              <h4>{{ item.name }}</h4>
-              <h5>{{ item.desc }}</h5>
-            </div>
+            <a :href="item.url" target="_blank">
+              <div class="single-category text-center mb-4">
+                <img :src="item.img" alt="category" width="43" height="43">
+                <h4>{{ item.name }}</h4>
+                <h5>{{ item.desc }}</h5>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -71,46 +73,54 @@
 <script>
 export default {
   name: 'Home',
-  data () {
+  data() {
     return {
       RetroGameList: [
         {
           img: 'static/assets/images/game/game_1.webp',
+          url: 'http://110.41.142.179:7001',
           name: '消灭星星',
           desc: '消灭星星'
         },
         {
           img: 'static/assets/images/game/game_2.webp',
+          url: 'http://110.41.142.179:7002',
           name: '六边形消除',
           desc: '六边形消除'
         },
         {
           img: 'static/assets/images/game/game_3.webp',
+          url: 'http://110.41.142.179:7003',
           name: '泡泡堂炸弹人',
           desc: '泡泡堂炸弹人'
         },
         {
           img: 'static/assets/images/game/game_4.webp',
+          url: 'http://110.41.142.179:7004',
           name: '俄罗斯方块',
           desc: '俄罗斯方块'
         },
         {
           img: 'static/assets/images/game/game_5.webp',
+          url: 'http://110.41.142.179:7005',
           name: '贪吃蛇',
           desc: '贪吃蛇'
         },
         {
           img: 'static/assets/images/game/game_6.webp',
+          url: 'http://110.41.142.179:7006',
           name: '打砖块',
           desc: '打砖块'
         },
         {
           img: 'static/assets/images/game/game_7.webp',
+          url: 'http://110.41.142.179:7007',
           name: '2048',
           desc: '2048'
         },
         {
           img: 'static/assets/images/game/game_8.webp',
+          url: 'http://110.41.142.179:7008',
           name: '数独',
           desc: '数独'
         }
@@ -118,7 +128,7 @@ export default {
     }
   },
   methods: {
-    onClickRetroGame (idx) {
+    onClickRetroGame(idx) {
       console.log('click:', this.RetroGameList[idx])
     }
   }
