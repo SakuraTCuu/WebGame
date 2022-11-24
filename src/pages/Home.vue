@@ -74,53 +74,54 @@
 export default {
   name: 'Home',
   data() {
+    const baseUrl = '110.41.142.179';
     return {
       RetroGameList: [
         {
           img: 'static/assets/images/game/game_1.webp',
-          url: 'http://110.41.142.179:7001',
+          url: `http://${baseUrl}:7001`,
           name: '消灭星星',
           desc: '消灭星星'
         },
         {
           img: 'static/assets/images/game/game_2.webp',
-          url: 'http://110.41.142.179:7002',
+          url: `http://${baseUrl}:7002`,
           name: '六边形消除',
           desc: '六边形消除'
         },
         {
           img: 'static/assets/images/game/game_3.webp',
-          url: 'http://110.41.142.179:7003',
+          url: `http://${baseUrl}:7003`,
           name: '泡泡堂炸弹人',
           desc: '泡泡堂炸弹人'
         },
         {
           img: 'static/assets/images/game/game_4.webp',
-          url: 'http://110.41.142.179:7004',
+          url: `http://${baseUrl}:7004`,
           name: '俄罗斯方块',
           desc: '俄罗斯方块'
         },
         {
           img: 'static/assets/images/game/game_5.webp',
-          url: 'http://110.41.142.179:7005',
+          url: `http://${baseUrl}:7005`,
           name: '贪吃蛇',
           desc: '贪吃蛇'
         },
         {
           img: 'static/assets/images/game/game_6.webp',
-          url: 'http://110.41.142.179:7006',
+          url: `http://${baseUrl}:7006`,
           name: '打砖块',
           desc: '打砖块'
         },
         {
           img: 'static/assets/images/game/game_7.webp',
-          url: 'http://110.41.142.179:7007',
+          url: `http://${baseUrl}:7007`,
           name: '2048',
           desc: '2048'
         },
         {
           img: 'static/assets/images/game/game_8.webp',
-          url: 'http://110.41.142.179:7008',
+          url: `http://${baseUrl}:7008`,
           name: '数独',
           desc: '数独'
         }
