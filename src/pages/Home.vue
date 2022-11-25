@@ -73,8 +73,8 @@
 <script>
 export default {
   name: 'Home',
-  data() {
-    const baseUrl = '110.41.142.179';
+  data () {
+    const baseUrl = '110.41.142.179'
     return {
       RetroGameList: [
         {
@@ -129,7 +129,7 @@ export default {
     }
   },
   methods: {
-    onClickRetroGame(idx) {
+    onClickRetroGame (idx) {
       console.log('click:', this.RetroGameList[idx])
     }
   }
