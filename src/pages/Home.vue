@@ -6,8 +6,8 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-top text-center">
-              <h2>复古游戏</h2>
-              <p>随便看看</p>
+              <h2>经典游戏</h2>
+              <!-- <p>随便看看</p> -->
             </div>
           </div>
         </div>
@@ -74,7 +74,9 @@
 export default {
   name: 'Home',
   data () {
-    const baseUrl = '110.41.142.179'
+    // const baseUrl = '110.41.142.179'
+    const baseUrl = '127.0.0.1'
+
     return {
       RetroGameList: [
         {
