@@ -7,21 +7,21 @@ import Blog from '@/pages/BlogHome'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: About
-    },
-    {
-      path: '/blog',
-      name: 'blog',
-      component: Blog
-    }
-  ]
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+            component: Home
+        },
+        {
+            path: '/about',
+            name: 'about',
+            component: About
+        },
+        {
+            path: '/blog',
+            name: 'blog',
+            component: Blog
+        }
+    ]
 })
